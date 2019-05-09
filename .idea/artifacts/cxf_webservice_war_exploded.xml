@@ -1,17 +1,17 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="cxf_test:war exploded">
+  <artifact type="exploded-war" name="cxf_webservice:war exploded">
     <output-path>$PROJECT_DIR$/target/soap_server</output-path>
     <properties id="maven-jee-properties">
       <options>
         <exploded>true</exploded>
-        <module>cxf_test</module>
+        <module>cxf_webservice</module>
         <packaging>war</packaging>
       </options>
     </properties>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="cxf_test" />
+          <element id="module-output" name="cxf_webservice" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.apache.cxf:cxf-rt-frontend-jaxws:3.1.15" />
@@ -49,7 +49,7 @@
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/soap_server/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="cxf_test/web/Web" />
+      <element id="javaee-facet-resources" facet="cxf_webservice/web/Web" />
     </root>
   </artifact>
 </component>
